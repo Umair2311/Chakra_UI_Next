@@ -1,15 +1,14 @@
 "use client";
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
 import { ChakraProvider, Flex } from '@chakra-ui/react'
+import Banner from '@/Components/Banner';
+import Notes from '@/Components/Notes';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <ChakraProvider>
-    <Flex>Hello Chakra</Flex>
+      <Banner />
+      <Notes />
     </ChakraProvider>
   )
 }
