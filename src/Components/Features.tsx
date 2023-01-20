@@ -9,10 +9,10 @@ interface FeatureProps extends StackProps {
 function Feature(props: FeatureProps) {
   const { icon, children, ...rest } = props;
   return (
-    <HStack {...rest} spacing="24px">
+    <HStack {...rest} spacing="24px" >
       <Icon as={icon} boxSize="48px" />
       <Text
-        width={"220px"}
+        width={{sm:"100%",lg:"220px"}}
         textAlign="left"
         fontSize={"18px"}
         fontWeight="700"
@@ -25,13 +25,13 @@ function Feature(props: FeatureProps) {
 
 export default function Features() {
   return (
-    <Box maxW={"1024px"} m="auto" pt="60px" pb="32px">
-      <HStack px="48px" spacing="20px">
-        <Feature icon={MoneyBackIcon}>30 days money back Gurantee</Feature>
-        <Feature icon={HassleFreeIcon}>
-          No setup fees 100%hassle-free
+    <Box maxW={{sm:"90%",lg:"1024px"}} m="auto" pt={{sm:"38px",lg:"60px"}} pb="32px">
+      <HStack px={{sm:"0px",lg:"48px"}} spacing={{sm:"0px",lg:"20px"}} alignItems={{sm:"flex-start",lg:"center"}} flexDirection={{sm:"column", lg:"row"}}>
+        <Feature mb={{sm:"25px !important",lg:"0px"}} icon={MoneyBackIcon}>30 days money back Gurantee</Feature>
+        <Feature mb={{sm:"25px !important",lg:"0px"}} icon={HassleFreeIcon}>
+          No setup fees 100% hassle-free
         </Feature>
-        <Feature icon={SubscriptionIcon}>
+        <Feature mb={{sm:"25px !important",lg:"0px"}} icon={SubscriptionIcon}>
           No monthly subscription Pay once and for all
         </Feature>
       </HStack>
