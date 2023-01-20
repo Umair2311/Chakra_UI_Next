@@ -1,6 +1,6 @@
 import { Box, Heading, Text } from "@chakra-ui/react"
 
-function Banner() {
+function Header() {
   return (
     <Box background="#6B46C1" color="white" textAlign="center" pt={88} pb={198}  >
         <Heading fontWeight={800} fontSize={48} mb={4}>Simple pricing for your business</Heading>
@@ -9,4 +9,4 @@ function Banner() {
   )
 }
 
-export default Banner
+export default Header

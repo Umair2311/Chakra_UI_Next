@@ -1,14 +1,14 @@
 "use client";
 import { ChakraProvider, Flex } from '@chakra-ui/react'
-import Banner from '@/Components/Banner';
-import Notes from '@/Components/Notes';
+import Features from '@/Components/Features';
+import Header from '@/Components/Header';
 
 
 export default function Home() {
   return (
     <ChakraProvider>
-      <Banner />
-      <Notes />
+      <Header />
+      <Features />
     </ChakraProvider>
   )
 }

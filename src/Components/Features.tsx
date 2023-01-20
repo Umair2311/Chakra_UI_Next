@@ -1,12 +1,11 @@
 import { Box, Image, Text } from "@chakra-ui/react"
 
-function Notes() {
+function Features() {
     return (
         <Box as="section" display="flex" justifyContent="center" pt={252}>
-            Notes
-            
+            Features
         </Box>
     )
 }
 
-export default Notes
+export default Features
